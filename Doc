@@ -1,0 +1,8 @@
+TEST UNITAIRE
+https://phpunit.de/getting-started/phpunit-9.html
+
+1. Qu'est ce que c'est
+Un système qui nous permet de tester les différents blocs de notre application.
+En PHP, c'est un test des différentes fonctions qui compose notre application
+
+2. Comment ça fonctionne
