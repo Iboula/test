@@ -7,15 +7,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     
     - name: Composer (php-actions)
       uses: php-actions/composer@v1
+    
+    - name: PHPUnit
+        uses: chindit/actions-phpunit-symfony@master
 
-    - name: PHPUnit (php-actions)
-      uses: php-actions/phpunit@v1
-      with:
-        config: vendor/phpunit/phpunit/phpunit.xml
+    # - name: PHPUnit (php-actions)
+    #   uses: php-actions/phpunit@v1
+    #   with:
+    #     config: vendor/phpunit/phpunit/phpunit.xml
       
     # - name: PHPUnit run
     #   run: |
