@@ -9,10 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: php-actions/composer@v1 # or alternative dependency management
-
-    - name: Install dependencies
-      run: composer install --prefer-dist --no-progress --no-suggest
-
+      with:
+        command: composer require --dev phpunit/phpunit
+    
     - name: PHPUnit (php-actions)
       uses: php-actions/phpunit@v1
       with:
