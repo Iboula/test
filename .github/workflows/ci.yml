@@ -14,7 +14,7 @@ jobs:
       run: composer install --prefer-dist --no-progress --no-suggest
 
     - name: PHPUnit run
-      run: ./vendor/bin/phpunit tests
+      run: php bin/phpunit
 
     # - name: PHPUnit (php-actions)
     #   uses: php-actions/phpunit@v1
