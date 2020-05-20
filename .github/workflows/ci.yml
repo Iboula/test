@@ -16,7 +16,7 @@ jobs:
       
     - name: PHPUnit run
       run: |
-        chmod +x ./vendor/bin/phpunit
+        sudo chmod 0775 vendor/phpunit/phpunit/phpunit
         ./vendor/bin/phpunit tests
 
     # - name: PHPUnit (php-actions)
