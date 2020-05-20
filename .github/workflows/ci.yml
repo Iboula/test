@@ -13,7 +13,7 @@ jobs:
       uses: php-actions/composer@v1
     
     - name: PHPUnit
-        uses: chindit/actions-phpunit-symfony@master
+      uses: chindit/actions-phpunit-symfony@master
 
     # - name: PHPUnit (php-actions)
     #   uses: php-actions/phpunit@v1
