@@ -8,10 +8,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: php-actions/composer@v1 # or alternative dependency management
-      with:
-        command: composer require --dev phpunit/phpunit
     
+    - name: Composer (php-actions)
+      uses: php-actions/composer@v1
+
     - name: PHPUnit (php-actions)
       uses: php-actions/phpunit@v1
       with:
