@@ -12,8 +12,11 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
-      
-    - name: PHPUnit (php-actions)
-      uses: php-actions/phpunit@v1
-      with:
-        config: vendor/phpunit/phpunit/phpunit.xml
+
+    - name: PHPUnit run
+      run: ./vendor/bin/phpunit tests
+
+    # - name: PHPUnit (php-actions)
+    #   uses: php-actions/phpunit@v1
+    #   with:
+    #     config: vendor/phpunit/phpunit/phpunit.xml
