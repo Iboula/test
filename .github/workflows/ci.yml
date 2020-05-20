@@ -7,13 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
+
+    - uses: nathanheffley/laravel-phpunit-action@master
     
-    - name: Composer (php-actions)
-      uses: php-actions/composer@v1
-    
-    - name: PHPUnit
-      uses: chindit/actions-phpunit-symfony@master
+    # - name: Composer (php-actions)
+    #   uses: php-actions/composer@v2
 
     # - name: PHPUnit (php-actions)
     #   uses: php-actions/phpunit@v1
