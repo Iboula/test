@@ -11,3 +11,5 @@ jobs:
     - uses: php-actions/composer@v1 # or alternative dependency management
     - name: PHPUnit (php-actions)
       uses: php-actions/phpunit@v1
+      with:
+        config: vendor/phpunit/phpunit/phpunit.xml
